@@ -20,6 +20,10 @@ the_mask = media.Movie("The Mask",130,
                    "https://www.youtube.com/watch?v=hOqVRwGVUkA")
 
 
+breaking_bad = TVShow("Breaking Bad",60,"EP1","Season 1","NetFlix")
+breaking_bad.show_info()
+
+
 movies = [toy_story,avatar,the_mask]
 
 
@@ -27,12 +31,9 @@ print(media.Movie.__doc__)
 print(media.__name__)
 print(media.Movie.__module__)
 toy_story.show_info()
-#print(media.Movie.VALID_RATINGS)
+print(media.Movie.VALID_RATINGS)
 
-#fresh_tomatoes.open_movies_page(movies)
+fresh_tomatoes.open_movies_page(movies)
 
-#print(avatar.storyline)
+print(avatar.storyline)
 #the_mask.showTrailer()
-
-breaking_bad = TVShow("Breaking Bad",60,"EP1","Season 1","NetFlix")
-breaking_bad.show_info()
