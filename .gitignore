@@ -2,3 +2,5 @@
 .DS_Store
 
 Programming Foundations/.DS_Store
+
+*.pyc
