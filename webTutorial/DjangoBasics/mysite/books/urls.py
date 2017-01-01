@@ -7,4 +7,6 @@ from . import views
 ## the pattern is what redirect to specific view if multiple views are present
 urlpatterns = [
     url(r'^$',views.index,name='index'),
+    #/books/2
+    url(r'^(?P<book_id>[0-9]+)/$',views.detail,name='detail'),
 ]
