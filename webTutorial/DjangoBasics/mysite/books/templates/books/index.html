@@ -1,6 +1,14 @@
-<ul>
-    {% for book in all_books %}
-        <!-- replaced static url with dynamic url -->
-        <li><a href="{% url 'detail' book.id %}">{{ book.name }},{{ book.author }}</a></li>
-    {% endfor %}
-</ul>
+{% load staticfiles %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'books/style.css' %}"
+    </head>
+    <body>
+        <ul>
+            {% for book in all_books %}
+                <!-- replaced static url with dynamic url also adding name space-->
+                <li><a href="{% url 'books:detail' book.id %}">{{ book.name }},{{ book.author }}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

@@ -5,6 +5,8 @@ from . import views
 
 ##this will redirect it to views file index method
 ## the pattern is what redirect to specific view if multiple views are present
+app_name = 'books'
+
 urlpatterns = [
     url(r'^$',views.index,name='index'),
     #/books/2
