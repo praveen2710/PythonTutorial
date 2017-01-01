@@ -19,5 +19,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    ##add this to redirect to books app
     url(r'^books/', include('books.urls')),
 ]
