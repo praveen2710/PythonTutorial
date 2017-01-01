@@ -1,5 +1,6 @@
 <ul>
     {% for book in all_books %}
-        <li><a href="/books/{{ book.id }}/">{{ book.name }},{{ book.author }}</a></li>
+        <!-- replaced static url with dynamic url -->
+        <li><a href="{% url 'detail' book.id %}">{{ book.name }},{{ book.author }}</a></li>
     {% endfor %}
 </ul>
