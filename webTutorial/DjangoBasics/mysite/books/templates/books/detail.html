@@ -1,4 +1,9 @@
 <!-- This reads the str function in models books class -->
-{{ book }}
-<h1>{{ book.name }}</h1>
-<h4>{{ book.author }}</h4>
+<!-- Add this to redirect to a common file for stuff that is common to all webpages like navigation bar here-->
+{% extends 'books/base.html' %}
+{% block body %}
+    {{ book }}
+    <h1>{{ book.name }}</h1>
+    <h4>{{ book.author }}</h4>
+
+{% endblock %}
