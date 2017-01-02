@@ -1,11 +1,15 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.core.urlresolvers import  reverse
 
 # Create your models here.
 
 ##class name is table name
 class Book(models.Model):
+
+    def get_absolute_url(self):
+        return reverse('books:detail', kwargs={'pk':self.pk})
 
     ##this will override string calls
     ##when call Book.objects.all() will show this
