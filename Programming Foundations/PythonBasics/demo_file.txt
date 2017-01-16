@@ -1,0 +1,3 @@
+writing to file from program 
+ I am the best
+ writing by calling write againWritng when opening in second time
